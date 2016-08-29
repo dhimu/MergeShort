@@ -12,10 +12,14 @@ public class Main {
 		System.out.println("\n\n----------------normal-------------------\n");
 		
 		new MergeSort(list, 0, list.length-1);
+		
 		System.out.println("\n\n--------------using Thread---------------\n");
+		
 		try {
+			
 			MergeSortTheaded mergeSortTheaded=new MergeSortTheaded(list, 0, list.length-1);
 			mergeSortTheaded.thread.join();
+			
 		} catch (InterruptedException e) {
 			System.out.println(e.getMessage());
 		};

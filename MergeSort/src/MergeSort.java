@@ -11,10 +11,9 @@ public class MergeSort {
 		this.list=list;
 		this.start_index=start_index;
 		this.end_index=end_index;
-		divid( start_index, end_index);
-		
-		
+		divid( start_index, end_index);	
 	}
+	
 	
 	void show(int start_index,int mid,int end_index,String s)
 	{
@@ -71,9 +70,7 @@ public class MergeSort {
 			
 		}
 		show( start_index, mid, end_index,"merge");
-		
-		
-		
+			
 		
 	}
 	
@@ -81,8 +78,7 @@ public class MergeSort {
 	{
 		
 		if(start_index<end_index)
-		{
-			
+		{			
 			int mid=start_index+(end_index-start_index)/2;
 			show( start_index, mid, end_index,"divid");
 			divid( start_index, mid);
